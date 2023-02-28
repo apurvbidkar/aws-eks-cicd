@@ -24,8 +24,8 @@ phases:
       - echo "Update Kube Config"      
       - aws eks --region us-east-1 update-kubeconfig --name apurv-cluster
       - echo "Apply changes to kube manifests"            
-      - kubectl apply -f demodeploy.yml
-      - kubectl apply -f demoservice.yml
+      - kubectl apply -f deploy.yml
+      - kubectl apply -f service.yml
 artifacts:
     files: 
       - imagedefinitions.json
