@@ -1,0 +1,11 @@
+kind: Service                             
+apiVersion: v1
+metadata:
+  name: serviceipdemo
+spec:
+  ports:
+    - port: 9000                            
+      targetPort: 80              
+  selector:
+    name: myapp              
+  type: NodePort
